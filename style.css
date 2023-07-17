@@ -1,0 +1,124 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.app {
+    background-color: #333;
+    min-height: 100vh;
+}
+.header {
+    text-align: center;
+    padding: 24px;
+}
+.headerTitle {
+    color: #ccc;
+    font-size: 4.5rem;
+    margin-top: 44px;
+}
+.inputBar {
+    margin-top: 50px;
+    width: 30%;
+    height: 30px;
+    padding: 0 10px;
+    font-size: 1.8rem;
+    border: none;
+    border-radius: 10px;
+    max-width: 515px;
+    outline: none;
+}
+.btn {
+    margin-left: 20px;
+    /* align-items: center; */
+    font-size: 2.5rem;
+    padding: 3px;
+    color: #ccc;
+    background-color: #333;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+    font-weight: 600;
+}
+.search {
+    align-items: center;
+    padding-bottom: 50px;
+}
+  
+.btn:hover {
+    color: #2196F3;
+    border: solid 2px #2196F3;
+    cursor: pointer;
+} 
+
+.search-icon {
+    transform: translateY(4px);
+    margin: 0 24px;
+    align-items: center;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ccc;
+}
+.seperateLine {
+    height: 3px;
+    width: 70%;
+    max-width: 1060px;
+    background-color: #ccc;
+    margin: auto;
+}
+ul {
+    list-style: none;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    min-height: 450px;
+}
+.textContent {
+    display: block;
+    margin-top: 30px;
+    font-style: italic;
+    color: #ccc;
+    font-size: 2.5rem;
+    text-align: center;
+    line-height: 3rem;
+}
+#taskList {
+    text-align: center;
+    margin: auto;
+}
+.taskItem {
+    align-items: center;
+}
+.taskItem .inputBar{
+    margin-bottom: -20px;
+    align-items: center;
+}
+.btn.del-btn:hover {
+    color: #F44336;
+    border: solid 2px #F44336;
+    cursor: pointer;
+}
+.footer {
+    padding: 40px 0;
+}
+.nameOfAuthor {
+    margin-top: 18px;
+    display: block;
+    color: #ccc;
+    font-size: 1.8rem;
+    text-align: center;
+}
+@media (max-width: 739px) {
+    .seperateLine {
+        width: 100%;
+    }
+}
