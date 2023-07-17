@@ -13,7 +13,7 @@ There are some demos of the website:
 ![Interface image](./readme-img/web-interface-demo.png)
 
 ## To see the website fully
-Download all files of this project (except the readme file and readme-img folder). Open index.html file and you can see the full website. Or you can visit the website by clicking [HERE](https://)
+Download all files of this project (except the readme file and readme-img folder). Open index.html file and you can see the full website. Or you can visit the website by clicking [HERE](https://simpletodolistwebsite.netlify.app)
 
  
 
