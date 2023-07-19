@@ -3,7 +3,18 @@ const inputItem = document.getElementById('inputItem');
 const searchItem = document.getElementById('searchItem');
 const taskList = document.getElementById('taskList');
 let tasks = [];
+//load from local storage
+document.addEventListener('DOMContentLoaded', () => {
+    var tasksStorage = localStorage.getItem('tasks');
+    if (tasksStorage) {
+        tasks = JSON.parse(tasksStorage);
+        displayTasks();
+    }
+});
 
+function updateLocalStorage() {
+    localStorage.setItem('tasks', JSON.stringify(tasks));
+}
 //add task section
 addForm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -17,6 +28,7 @@ addForm.addEventListener('submit', (e) => {
         inputItem.value = '';
         // console.log(task);
         displayTasks();
+        updateLocalStorage();
     }
 });
 
@@ -50,6 +62,7 @@ taskList.addEventListener('click', (e) => {
         var idItem = e.target.parentElement.getAttribute('data-id');
         tasks = tasks.filter((task) => task.id != idItem);
         displayTasks();
+        updateLocalStorage();
     }
 });
 
@@ -63,6 +76,7 @@ taskList.addEventListener('input', (e) => {
                 task.data = newText;
             }
         });
+        updateLocalStorage();
     }
 });
 
